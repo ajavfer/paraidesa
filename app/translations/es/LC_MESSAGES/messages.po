@@ -1,0 +1,780 @@
+# Spanish translations for Paraidesa.
+# Copyright (C) 2025 Paraidesa
+# This file is distributed under the same license as the Paraidesa project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Paraidesa 1.0\n"
+"Report-Msgid-Bugs-To: info@paraidesa.com\n"
+"POT-Creation-Date: 2025-07-25 00:28+0200\n"
+"PO-Revision-Date: 2025-07-25 00:29+0200\n"
+"Last-Translator: Paraidesa Team <info@paraidesa.com>\n"
+"Language: es\n"
+"Language-Team: es <info@paraidesa.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: app/email.py:80
+msgid "Thank you for contacting us"
+msgstr "Gracias por contactar con nosotros"
+
+#: app/main/forms.py:8
+msgid "Name"
+msgstr "Nombre"
+
+#: app/main/forms.py:10
+msgid "Please enter your name"
+msgstr "Por favor, introduce tu nombre"
+
+#: app/main/forms.py:11
+msgid "Name must be between 2 and 100 characters"
+msgstr "El nombre debe tener entre 2 y 100 caracteres"
+
+#: app/main/forms.py:13
+msgid "Your name"
+msgstr "Tu nombre"
+
+#: app/main/forms.py:17
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: app/main/forms.py:19
+msgid "Please enter your email"
+msgstr "Por favor, introduce tu correo electrónico"
+
+#: app/main/forms.py:20
+msgid "Please enter a valid email address"
+msgstr "Por favor, introduce una dirección de correo válida"
+
+#: app/main/forms.py:22
+msgid "your.email@example.com"
+msgstr "tu.email@ejemplo.com"
+
+#: app/main/forms.py:26
+msgid "Phone"
+msgstr "Teléfono"
+
+#: app/main/forms.py:29
+msgid "Phone number is too long"
+msgstr "El número de teléfono es demasiado largo"
+
+#: app/main/forms.py:31
+msgid "+34 600 000 000"
+msgstr "+34 600 000 000"
+
+#: app/main/forms.py:35
+msgid "Subject"
+msgstr "Asunto"
+
+#: app/main/forms.py:37
+msgid "Please enter a subject"
+msgstr "Por favor, introduce un asunto"
+
+#: app/main/forms.py:38
+msgid "Subject is too long"
+msgstr "El asunto es demasiado largo"
+
+#: app/main/forms.py:40
+msgid "How can we help you?"
+msgstr "¿En qué podemos ayudarte?"
+
+#: app/main/forms.py:44
+msgid "Message"
+msgstr "Mensaje"
+
+#: app/main/forms.py:46
+msgid "Please enter your message"
+msgstr "Por favor, introduce tu mensaje"
+
+#: app/main/forms.py:47
+msgid "Message must be between 10 and 2000 characters"
+msgstr "El mensaje debe tener entre 10 y 2000 caracteres"
+
+#: app/main/forms.py:49
+msgid "Your message here..."
+msgstr "Tu mensaje aquí..."
+
+#: app/main/routes.py:12 app/templates/base.html:34 app/templates/index.html:3
+#: app/templates/services.html:15
+msgid "Home"
+msgstr "Inicio"
+
+#: app/main/routes.py:17 app/templates/base.html:92
+msgid "About Us"
+msgstr "Sobre Nosotros"
+
+#: app/main/routes.py:22 app/templates/base.html:40 app/templates/base.html:93
+#: app/templates/services.html:16
+msgid "Services"
+msgstr "Servicios"
+
+#: app/main/routes.py:27 app/templates/base.html:43 app/templates/base.html:94
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: app/main/routes.py:63
+msgid "Thank you for your message. We will get back to you soon!"
+msgstr ""
+
+#: app/main/routes.py:68
+msgid "An error occurred while sending your message. Please try again later."
+msgstr ""
+
+#: app/main/routes.py:71 app/templates/contact.html:43
+msgid "Contact Us"
+msgstr "Contacto"
+
+#: app/templates/about.html:7
+msgid "About Paraidesa"
+msgstr ""
+
+#: app/templates/about.html:10
+msgid "Our Story"
+msgstr ""
+
+#: app/templates/about.html:11
+msgid ""
+"Paraidesa was born from a passion for creating beautiful, sustainable "
+"outdoor spaces that blend seamlessly with their natural surroundings. "
+"With years of experience in landscape design and gardening, we bring "
+"creativity and expertise to every project."
+msgstr ""
+
+#: app/templates/about.html:15
+msgid "Our Mission"
+msgstr ""
+
+#: app/templates/about.html:16
+msgid ""
+"Our mission is to transform ordinary spaces into extraordinary landscapes"
+" that enhance the beauty of your property and provide a sanctuary for "
+"both people and nature. We are committed to sustainable practices and "
+"creating designs that stand the test of time."
+msgstr ""
+
+#: app/templates/about.html:20
+msgid "Our Team"
+msgstr ""
+
+#: app/templates/about.html:21
+msgid ""
+"Our team of skilled professionals includes landscape architects, "
+"gardeners, and maintenance experts who share a common vision of "
+"excellence in landscape design and implementation."
+msgstr ""
+
+#: app/templates/about.html:26 app/templates/contact.html:129
+#: app/templates/services.html:160
+msgid "Get in Touch"
+msgstr ""
+
+#: app/templates/base.html:6 app/templates/base.html:26
+#: app/templates/base.html:85 app/templates/index.html:9
+msgid "Paraidesa"
+msgstr ""
+
+#: app/templates/base.html:37
+msgid "About"
+msgstr "Sobre Nosotros"
+
+#: app/templates/base.html:46 app/templates/base.html:95
+#: app/templates/base.html:99
+msgid "Contact"
+msgstr "Contacto"
+
+#: app/templates/base.html:86
+msgid "Designing paradises, cultivating life."
+msgstr ""
+
+#: app/templates/base.html:87
+msgid "Diseñando paraísos, cultivando vida."
+msgstr ""
+
+#: app/templates/base.html:90
+msgid "Links"
+msgstr "Enlaces"
+
+#: app/templates/base.html:108
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados."
+
+#: app/templates/contact.html:44
+msgid "Have questions or ready to start your project? We'd love to hear from you!"
+msgstr ""
+
+#: app/templates/contact.html:53
+msgid "Send us a Message"
+msgstr ""
+
+#: app/templates/contact.html:111
+msgid "I agree to the"
+msgstr ""
+
+#: app/templates/contact.html:111
+msgid "privacy policy"
+msgstr ""
+
+#: app/templates/contact.html:134
+msgid "Call Us"
+msgstr ""
+
+#: app/templates/contact.html:142
+msgid "Email Us"
+msgstr ""
+
+#: app/templates/contact.html:150
+msgid "Working Hours"
+msgstr ""
+
+#: app/templates/contact.html:151
+msgid "Monday - Friday"
+msgstr ""
+
+#: app/templates/contact.html:151
+msgid "9:00 AM - 6:00 PM"
+msgstr ""
+
+#: app/templates/contact.html:164
+msgid "Privacy Policy"
+msgstr ""
+
+#: app/templates/contact.html:168
+msgid "Information We Collect"
+msgstr ""
+
+#: app/templates/contact.html:169
+msgid ""
+"We collect information that you provide directly to us, such as your "
+"name, email address, phone number, and any other information you choose "
+"to provide."
+msgstr ""
+
+#: app/templates/contact.html:171
+msgid "How We Use Your Information"
+msgstr ""
+
+#: app/templates/contact.html:172
+msgid ""
+"We use the information we collect to respond to your inquiries, provide "
+"the services you request, and communicate with you about our services."
+msgstr ""
+
+#: app/templates/contact.html:174
+msgid "Data Security"
+msgstr ""
+
+#: app/templates/contact.html:175
+msgid ""
+"We implement appropriate technical and organizational measures to protect"
+" your personal information against unauthorized access, alteration, "
+"disclosure, or destruction."
+msgstr ""
+
+#: app/templates/contact.html:178 app/templates/portfolio.html:190
+#: app/templates/portfolio.html:222 app/templates/portfolio.html:254
+#: app/templates/portfolio.html:286 app/templates/portfolio.html:318
+#: app/templates/portfolio.html:350
+msgid "Close"
+msgstr ""
+
+#: app/templates/index.html:11
+msgid "Diseñando paraísos, cultivando vida"
+msgstr ""
+
+#: app/templates/index.html:12
+msgid "Designing paradises, cultivating life"
+msgstr ""
+
+#: app/templates/index.html:16
+msgid "Get a Quote"
+msgstr "Solicitar Presupuesto"
+
+#: app/templates/index.html:19
+msgid "View Our Work"
+msgstr "Ver Nuestro Trabajo"
+
+#: app/templates/index.html:31
+msgid "Welcome to Paraidesa"
+msgstr "Bienvenido a Paraidesa"
+
+#: app/templates/index.html:33
+msgid "Beautiful Mediterranean garden"
+msgstr ""
+
+#: app/templates/index.html:38
+msgid ""
+"We are a landscape design studio dedicated to creating beautiful, "
+"sustainable outdoor spaces."
+msgstr "Somos un estudio de diseño de paisajismo dedicado a crear espacios exteriores hermosos y sostenibles."
+
+#: app/templates/index.html:41
+msgid ""
+"Our team of experts combines creativity with technical knowledge to "
+"transform any space into a natural paradise. We work closely with our "
+"clients to understand their vision and bring it to life."
+msgstr "Nuestro equipo de expertos combina creatividad con conocimiento técnico para transformar cualquier espacio en un paraíso natural. Trabajamos estrechamente con nuestros clientes para comprender su visión y hacerla realidad."
+
+#: app/templates/index.html:44
+msgid "Learn More About Us"
+msgstr "Conócenos Mejor"
+
+#: app/templates/index.html:49
+msgid "Beautiful garden design"
+msgstr ""
+
+#: app/templates/index.html:60 app/templates/services.html:3
+#: app/templates/services.html:11
+msgid "Our Services"
+msgstr "Nuestros Servicios"
+
+#: app/templates/index.html:61 app/templates/services.html:12
+msgid "Comprehensive landscape solutions for residential and commercial projects"
+msgstr "Soluciones integrales de paisajismo para proyectos residenciales y comerciales"
+
+#: app/templates/index.html:69 app/templates/index.html:71
+msgid "Landscape Design"
+msgstr "Diseño de Jardines"
+
+#: app/templates/index.html:73
+msgid "Custom landscape designs tailored to your space, style, and needs."
+msgstr "Diseños de jardines personalizados adaptados a su espacio, estilo y necesidades."
+
+#: app/templates/index.html:83 app/templates/index.html:85
+msgid "Garden Construction"
+msgstr "Construcción de Jardines"
+
+#: app/templates/index.html:87
+msgid ""
+"Professional installation of hardscapes, softscapes, and outdoor living "
+"spaces."
+msgstr "Instalación profesional de elementos duros, blandos y espacios de vida al aire libre."
+
+#: app/templates/index.html:97 app/templates/index.html:99
+#: app/templates/services.html:127
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#: app/templates/index.html:101
+msgid ""
+"Regular care and maintenance to keep your outdoor space looking its best "
+"year-round."
+msgstr "Cuidado y mantenimiento regulares para que su espacio exterior luzca perfecto durante todo el año."
+
+#: app/templates/index.html:110
+msgid "View All Services"
+msgstr "Ver Todos los Servicios"
+
+#: app/templates/index.html:120
+msgid "Our Work"
+msgstr "Nuestro Trabajo"
+
+#: app/templates/index.html:121
+msgid "Explore some of our recent projects"
+msgstr "Descubra algunos de nuestros proyectos recientes"
+
+#: app/templates/index.html:129
+msgid "Project"
+msgstr "Proyecto"
+
+#: app/templates/index.html:133
+msgid "Project Title"
+msgstr "Título del Proyecto"
+
+#: app/templates/index.html:134
+msgid "Residential Garden"
+msgstr "Jardín Residencial"
+
+#: app/templates/index.html:136 app/templates/portfolio.html:71
+#: app/templates/portfolio.html:87 app/templates/portfolio.html:103
+#: app/templates/portfolio.html:119 app/templates/portfolio.html:135
+#: app/templates/portfolio.html:151
+msgid "View Project"
+msgstr "Ver Proyecto"
+
+#: app/templates/index.html:147
+msgid "View Full Portfolio"
+msgstr "Ver Portafolio Completo"
+
+#: app/templates/index.html:157 app/templates/services.html:171
+msgid "What Our Clients Say"
+msgstr "Lo Que Dicen Nuestros Clientes"
+
+#: app/templates/index.html:158 app/templates/services.html:172
+msgid "Hear from some of our satisfied customers"
+msgstr "Conozca las opiniones de algunos de nuestros clientes satisfechos"
+
+#: app/templates/index.html:171 app/templates/services.html:180
+msgid ""
+"Paraidesa transformed our backyard into a beautiful oasis. Their "
+"attention to detail and creative design exceeded our expectations."
+msgstr "Paraidesa transformó nuestro jardín trasero en un hermoso oasis. Su atención al detalle y diseño creativo superaron nuestras expectativas."
+
+#: app/templates/index.html:180
+msgid "Madrid"
+msgstr ""
+
+#: app/templates/index.html:198
+msgid "Ready to transform your outdoor space?"
+msgstr "¿Listo para transformar su espacio exterior?"
+
+#: app/templates/index.html:199
+msgid "Contact us today for a free consultation"
+msgstr "Contáctenos hoy para una consulta gratuita"
+
+#: app/templates/index.html:203
+msgid "Get Started"
+msgstr ""
+
+#: app/templates/portfolio.html:46
+msgid "Our Portfolio"
+msgstr ""
+
+#: app/templates/portfolio.html:47
+msgid ""
+"Explore our recent landscaping projects and get inspired for your own "
+"outdoor space."
+msgstr ""
+
+#: app/templates/portfolio.html:54
+msgid "All"
+msgstr ""
+
+#: app/templates/portfolio.html:55
+msgid "Garden Design"
+msgstr ""
+
+#: app/templates/portfolio.html:56
+msgid "Terraces"
+msgstr ""
+
+#: app/templates/portfolio.html:57
+msgid "Pools"
+msgstr ""
+
+#: app/templates/portfolio.html:58
+msgid "Lighting"
+msgstr ""
+
+#: app/templates/portfolio.html:76
+msgid "Castillo de Lorca"
+msgstr ""
+
+#: app/templates/portfolio.html:77
+msgid "Historic Garden Restoration"
+msgstr ""
+
+#: app/templates/portfolio.html:92 app/templates/portfolio.html:201
+msgid "Modern Residence Garden"
+msgstr ""
+
+#: app/templates/portfolio.html:93
+msgid "Contemporary Design"
+msgstr ""
+
+#: app/templates/portfolio.html:108 app/templates/portfolio.html:233
+msgid "Luxury Rooftop Terrace"
+msgstr ""
+
+#: app/templates/portfolio.html:109
+msgid "Outdoor Living Space"
+msgstr ""
+
+#: app/templates/portfolio.html:124 app/templates/portfolio.html:265
+msgid "Infinity Pool Oasis"
+msgstr ""
+
+#: app/templates/portfolio.html:125
+msgid "Luxury Pool Design"
+msgstr ""
+
+#: app/templates/portfolio.html:140 app/templates/portfolio.html:297
+msgid "Minimalist Garden"
+msgstr ""
+
+#: app/templates/portfolio.html:141
+msgid "Contemporary Landscape"
+msgstr ""
+
+#: app/templates/portfolio.html:156 app/templates/portfolio.html:329
+msgid "Elegant Garden Retreat"
+msgstr ""
+
+#: app/templates/portfolio.html:157
+msgid "Landscape Architecture"
+msgstr ""
+
+#: app/templates/portfolio.html:169
+msgid "Castillo de Lorca Gardens"
+msgstr ""
+
+#: app/templates/portfolio.html:178 app/templates/portfolio.html:210
+#: app/templates/portfolio.html:242 app/templates/portfolio.html:274
+#: app/templates/portfolio.html:306 app/templates/portfolio.html:338
+msgid "Project Details"
+msgstr ""
+
+#: app/templates/portfolio.html:179
+msgid ""
+"Historic garden restoration at the iconic Castillo de Lorca, blending "
+"traditional Mediterranean landscaping with modern sustainability "
+"practices."
+msgstr ""
+
+#: app/templates/portfolio.html:181 app/templates/portfolio.html:213
+#: app/templates/portfolio.html:245 app/templates/portfolio.html:277
+#: app/templates/portfolio.html:309 app/templates/portfolio.html:341
+msgid "Location:"
+msgstr ""
+
+#: app/templates/portfolio.html:181
+msgid "Lorca, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:182 app/templates/portfolio.html:214
+#: app/templates/portfolio.html:246 app/templates/portfolio.html:278
+#: app/templates/portfolio.html:310 app/templates/portfolio.html:342
+msgid "Size:"
+msgstr ""
+
+#: app/templates/portfolio.html:183 app/templates/portfolio.html:215
+#: app/templates/portfolio.html:247 app/templates/portfolio.html:279
+#: app/templates/portfolio.html:311 app/templates/portfolio.html:343
+msgid "Completed:"
+msgstr ""
+
+#: app/templates/portfolio.html:184 app/templates/portfolio.html:216
+#: app/templates/portfolio.html:248 app/templates/portfolio.html:280
+#: app/templates/portfolio.html:312 app/templates/portfolio.html:344
+msgid "Features:"
+msgstr ""
+
+#: app/templates/portfolio.html:184
+msgid "Drought-resistant plants, traditional stonework, historical accuracy"
+msgstr ""
+
+#: app/templates/portfolio.html:211
+msgid ""
+"A contemporary garden design that complements modern architecture with "
+"clean lines and minimalist plantings."
+msgstr ""
+
+#: app/templates/portfolio.html:213
+msgid "Barcelona, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:216
+msgid "Native plants, sustainable irrigation, outdoor lighting"
+msgstr ""
+
+#: app/templates/portfolio.html:243
+msgid ""
+"An elegant rooftop terrace designed for both relaxation and "
+"entertainment, featuring premium materials and panoramic views."
+msgstr ""
+
+#: app/templates/portfolio.html:245
+msgid "Madrid, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:248
+msgid "Outdoor kitchen, lounge area, weather-resistant furniture"
+msgstr ""
+
+#: app/templates/portfolio.html:275
+msgid ""
+"A stunning infinity pool that blends seamlessly with the surrounding "
+"landscape, creating a luxurious retreat."
+msgstr ""
+
+#: app/templates/portfolio.html:277
+msgid "Marbella, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:280
+msgid "Infinity edge, LED lighting, natural stone deck"
+msgstr ""
+
+#: app/templates/portfolio.html:307
+msgid ""
+"A clean, minimalist garden design that creates a peaceful outdoor "
+"sanctuary with low-maintenance plantings."
+msgstr ""
+
+#: app/templates/portfolio.html:309
+msgid "Valencia, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:312
+msgid "Drought-tolerant plants, geometric hardscaping, subtle lighting"
+msgstr ""
+
+#: app/templates/portfolio.html:339
+msgid ""
+"A beautifully designed garden that combines formal elements with "
+"naturalistic plantings for a timeless appeal."
+msgstr ""
+
+#: app/templates/portfolio.html:341
+msgid "Seville, Spain"
+msgstr ""
+
+#: app/templates/portfolio.html:344
+msgid "Formal hedges, water feature, mixed borders"
+msgstr ""
+
+#: app/templates/services.html:29
+msgid "Comprehensive Landscape Solutions"
+msgstr ""
+
+#: app/templates/services.html:31
+msgid ""
+"We offer a full range of landscape design and construction services to "
+"bring your outdoor vision to life."
+msgstr ""
+
+#: app/templates/services.html:40
+msgid "Landscape Studies & Projects"
+msgstr ""
+
+#: app/templates/services.html:41
+msgid ""
+"Detailed analysis and planning for your landscape project, including site"
+" assessment, conceptual design, and master planning."
+msgstr ""
+
+#: app/templates/services.html:45
+msgid "Landscaping & Engineering"
+msgstr ""
+
+#: app/templates/services.html:46
+msgid ""
+"Professional landscape construction and engineering services including "
+"grading, drainage, and structural elements."
+msgstr ""
+
+#: app/templates/services.html:50
+msgid "Garden Design & Execution"
+msgstr ""
+
+#: app/templates/services.html:51
+msgid ""
+"Complete garden design services from concept to completion, tailored to "
+"your space and preferences."
+msgstr ""
+
+#: app/templates/services.html:55
+msgid "Botanical & Biological Studies"
+msgstr ""
+
+#: app/templates/services.html:56
+msgid ""
+"Expert analysis of plant life and ecosystems to ensure sustainable and "
+"appropriate plant selection."
+msgstr ""
+
+#: app/templates/services.html:60
+msgid "Landscape & Botany Education"
+msgstr ""
+
+#: app/templates/services.html:61
+msgid ""
+"Educational programs and workshops on landscape design, plant care, and "
+"sustainable gardening practices."
+msgstr ""
+
+#: app/templates/services.html:65
+msgid "Environmental Studies"
+msgstr ""
+
+#: app/templates/services.html:66
+msgid ""
+"Comprehensive environmental impact assessments and sustainable landscape "
+"solutions."
+msgstr ""
+
+#: app/templates/services.html:91
+msgid "Our Process"
+msgstr ""
+
+#: app/templates/services.html:93
+msgid "A structured approach to bringing your landscape vision to life"
+msgstr ""
+
+#: app/templates/services.html:102
+msgid "Consultation"
+msgstr ""
+
+#: app/templates/services.html:103
+msgid ""
+"We begin with an in-depth consultation to understand your vision, needs, "
+"and budget."
+msgstr ""
+
+#: app/templates/services.html:107
+msgid "Site Analysis"
+msgstr ""
+
+#: app/templates/services.html:108
+msgid ""
+"Our team conducts a thorough analysis of your property, including soil, "
+"climate, and existing vegetation."
+msgstr ""
+
+#: app/templates/services.html:112
+msgid "Concept Design"
+msgstr ""
+
+#: app/templates/services.html:113
+msgid ""
+"We create initial design concepts that reflect your vision and our "
+"professional expertise."
+msgstr ""
+
+#: app/templates/services.html:117
+msgid "Design Development"
+msgstr ""
+
+#: app/templates/services.html:118
+msgid ""
+"The chosen concept is refined with detailed plans, material selections, "
+"and plant palettes."
+msgstr ""
+
+#: app/templates/services.html:122
+msgid "Implementation"
+msgstr ""
+
+#: app/templates/services.html:123
+msgid ""
+"Our skilled team brings the design to life with meticulous attention to "
+"detail and quality."
+msgstr ""
+
+#: app/templates/services.html:128
+msgid ""
+"We provide ongoing maintenance services to keep your landscape looking "
+"its best year-round."
+msgstr ""
+
+#: app/templates/services.html:155
+msgid "Ready to start your project?"
+msgstr ""
+
+#: app/templates/services.html:156
+msgid "Contact us today to schedule a consultation"
+msgstr ""
+
+#: app/templates/services.html:186
+msgid ""
+"The team was professional, creative, and delivered our project on time "
+"and within budget. Highly recommended!"
+msgstr ""
+
+#: app/templates/services.html:192
+msgid ""
+"Outstanding service from start to finish. Our garden has never looked "
+"better!"
+msgstr ""

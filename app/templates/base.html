@@ -48,14 +48,14 @@
                 </ul>
                 
                 <!-- Language Switcher -->
-                <div class="d-flex">
+                <div class="ms-3">
                     <div class="btn-group" role="group">
-                        <a href="{{ url_for('main.set_language', language='es') }}" 
-                           class="btn btn-outline-secondary {% if g.current_language == 'es' %}active{% endif %}">
+                        <a href="{{ url_for(request.endpoint, lang='es', **request.view_args) if request.endpoint and request.view_args else url_for('main.index', lang='es') }}"
+                           class="btn btn-sm btn-outline-light {{ 'active' if g.current_language == 'es' else '' }}">
                             ES
                         </a>
-                        <a href="{{ url_for('main.set_language', language='en') }}" 
-                           class="btn btn-outline-secondary {% if g.current_language == 'en' %}active{% endif %}">
+                        <a href="{{ url_for(request.endpoint, lang='en', **request.view_args) if request.endpoint and request.view_args else url_for('main.index', lang='en') }}"
+                           class="btn btn-sm btn-outline-light {{ 'active' if g.current_language == 'en' else '' }}">
                             EN
                         </a>
                     </div>

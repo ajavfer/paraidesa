@@ -62,75 +62,292 @@
 
     <!-- Portfolio Grid -->
     <div class="row" id="portfolio-grid">
-        <!-- Project 1 -->
+        <!-- Project 1 - Castillo de Lorca -->
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="garden">
             <div class="position-relative">
-                <img src="{{ url_for('static', filename='images/portfolio/garden-1.jpg') }}" alt="Garden Design" class="img-fluid portfolio-img">
+                <img src="{{ url_for('static', filename='images/portfolio/mediterranean-garden-1.jpg') }}" alt="Castillo de Lorca Gardens" class="img-fluid portfolio-img">
                 <div class="portfolio-overlay">
-                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#castilloModal">
                         {{ _('View Project') }}
                     </a>
                 </div>
             </div>
             <div class="p-3">
-                <h5 class="mb-1">{{ _('Modern Garden Oasis') }}</h5>
-                <p class="portfolio-category mb-0">{{ _('Garden Design') }}</p>
+                <h5 class="mb-1">{{ _('Castillo de Lorca') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Historic Garden Restoration') }}</p>
             </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 2 - Modern House Garden -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="garden">
+            <div class="position-relative">
+                <img src="{{ url_for('static', filename='images/portfolio/modern-house-garden.jpg') }}" alt="Modern House Garden" class="img-fluid portfolio-img">
+                <div class="portfolio-overlay">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modernHouseModal">
+                        {{ _('View Project') }}
+                    </a>
+                </div>
+            </div>
+            <div class="p-3">
+                <h5 class="mb-1">{{ _('Modern Residence Garden') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Contemporary Design') }}</p>
+            </div>
+        </div>
+
+        <!-- Project 3 - Luxury Terrace -->
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="terrace">
             <div class="position-relative">
-                <img src="{{ url_for('static', filename='images/portfolio/terrace-1.jpg') }}" alt="Terrace Design" class="img-fluid portfolio-img">
+                <img src="{{ url_for('static', filename='images/portfolio/luxury-terrace.jpg') }}" alt="Luxury Terrace" class="img-fluid portfolio-img">
                 <div class="portfolio-overlay">
-                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#terraceModal">
                         {{ _('View Project') }}
                     </a>
                 </div>
             </div>
             <div class="p-3">
-                <h5 class="mb-1">{{ _('Luxury Terrace') }}</h5>
-                <p class="portfolio-category mb-0">{{ _('Terraces') }}</p>
+                <h5 class="mb-1">{{ _('Luxury Rooftop Terrace') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Outdoor Living Space') }}</p>
             </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4 - Garden Pool -->
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="pool">
             <div class="position-relative">
-                <img src="{{ url_for('static', filename='images/portfolio/pool-1.jpg') }}" alt="Pool Design" class="img-fluid portfolio-img">
+                <img src="{{ url_for('static', filename='images/portfolio/garden-pool.jpg') }}" alt="Garden Pool" class="img-fluid portfolio-img">
                 <div class="portfolio-overlay">
-                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#poolModal">
                         {{ _('View Project') }}
                     </a>
                 </div>
             </div>
             <div class="p-3">
-                <h5 class="mb-1">{{ _('Infinity Pool') }}</h5>
-                <p class="portfolio-category mb-0">{{ _('Pools') }}</p>
+                <h5 class="mb-1">{{ _('Infinity Pool Oasis') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Luxury Pool Design') }}</p>
+            </div>
+        </div>
+
+        <!-- Project 5 - Modern Garden -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="garden">
+            <div class="position-relative">
+                <img src="{{ url_for('static', filename='images/portfolio/modern-garden.jpg') }}" alt="Modern Garden" class="img-fluid portfolio-img">
+                <div class="portfolio-overlay">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modernGardenModal">
+                        {{ _('View Project') }}
+                    </a>
+                </div>
+            </div>
+            <div class="p-3">
+                <h5 class="mb-1">{{ _('Minimalist Garden') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Contemporary Landscape') }}</p>
+            </div>
+        </div>
+
+        <!-- Project 6 - Garden Design -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="garden">
+            <div class="position-relative">
+                <img src="{{ url_for('static', filename='images/portfolio/garden-design-2.jpg') }}" alt="Garden Design" class="img-fluid portfolio-img">
+                <div class="portfolio-overlay">
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#gardenDesignModal">
+                        {{ _('View Project') }}
+                    </a>
+                </div>
+            </div>
+            <div class="p-3">
+                <h5 class="mb-1">{{ _('Elegant Garden Retreat') }}</h5>
+                <p class="portfolio-category mb-0">{{ _('Landscape Architecture') }}</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Project Modals -->
-<!-- Modal 1 -->
-<div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+<!-- Castillo de Lorca Modal -->
+<div class="modal fade" id="castilloModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ _('Modern Garden Oasis') }}</h5>
+                <h5 class="modal-title">{{ _('Castillo de Lorca Gardens') }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ url_for('static', filename='images/portfolio/garden-1.jpg') }}" class="img-fluid mb-3" alt="Modern Garden">
-                <p>{{ _('This modern garden design features clean lines, sustainable plants, and a beautiful water feature that creates a peaceful retreat right in your backyard.') }}</p>
-                <p><strong>{{ _('Features:') }}</strong></p>
-                <ul>
-                    <li>{{ _('Native plant species') }}</li>
-                    <li>{{ _('Water-efficient irrigation') }}</li>
-                    <li>{{ _('Modern seating area') }}</li>
-                    <li>{{ _('Decorative stone pathways') }}</li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/mediterranean-garden-1.jpg') }}" alt="Castillo de Lorca Gardens" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('Historic garden restoration at the iconic Castillo de Lorca, blending traditional Mediterranean landscaping with modern sustainability practices.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Lorca, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 2,500 m²</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2022</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Drought-resistant plants, traditional stonework, historical accuracy') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modern House Garden Modal -->
+<div class="modal fade" id="modernHouseModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Modern Residence Garden') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/modern-house-garden.jpg') }}" alt="Modern House Garden" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('A contemporary garden design that complements modern architecture with clean lines and minimalist plantings.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Barcelona, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 320 m²</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2023</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Native plants, sustainable irrigation, outdoor lighting') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Luxury Terrace Modal -->
+<div class="modal fade" id="terraceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Luxury Rooftop Terrace') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/luxury-terrace.jpg') }}" alt="Luxury Terrace" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('An elegant rooftop terrace designed for both relaxation and entertainment, featuring premium materials and panoramic views.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Madrid, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 85 m²</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2023</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Outdoor kitchen, lounge area, weather-resistant furniture') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pool Oasis Modal -->
+<div class="modal fade" id="poolModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Infinity Pool Oasis') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/garden-pool.jpg') }}" alt="Infinity Pool Oasis" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('A stunning infinity pool that blends seamlessly with the surrounding landscape, creating a luxurious retreat.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Marbella, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 10m x 5m pool</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2023</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Infinity edge, LED lighting, natural stone deck') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modern Garden Modal -->
+<div class="modal fade" id="modernGardenModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Minimalist Garden') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/modern-garden.jpg') }}" alt="Minimalist Garden" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('A clean, minimalist garden design that creates a peaceful outdoor sanctuary with low-maintenance plantings.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Valencia, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 180 m²</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2023</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Drought-tolerant plants, geometric hardscaping, subtle lighting') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Garden Design Modal -->
+<div class="modal fade" id="gardenDesignModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Elegant Garden Retreat') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="{{ url_for('static', filename='images/portfolio/garden-design-2.jpg') }}" alt="Elegant Garden Retreat" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h6>{{ _('Project Details') }}</h6>
+                        <p>{{ _('A beautifully designed garden that combines formal elements with naturalistic plantings for a timeless appeal.') }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>{{ _('Location:') }}</strong> {{ _('Seville, Spain') }}</li>
+                            <li><strong>{{ _('Size:') }}</strong> 450 m²</li>
+                            <li><strong>{{ _('Completed:') }}</strong> 2023</li>
+                            <li><strong>{{ _('Features:') }}</strong> {{ _('Formal hedges, water feature, mixed borders') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
             </div>
         </div>
     </div>

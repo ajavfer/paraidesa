@@ -15,6 +15,20 @@ login_manager = LoginManager()
 mail = Mail()
 login_manager.login_view = 'main.login'
 
+def get_locale():
+    # Check URL parameter first
+    lang = request.args.get('lang')
+    if lang in current_app.config['LANGUAGES']:
+        session['language'] = lang
+        return lang
+        
+    # Then check session
+    if 'language' in session and session['language'] in current_app.config['LANGUAGES']:
+        return session['language']
+        
+    # Fall back to default
+    return current_app.config['BABEL_DEFAULT_LOCALE']
+
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
@@ -22,7 +36,10 @@ def create_app(config_class=Config):
     # Initialize extensions with app
     db.init_app(app)
     migrate.init_app(app, db)
-    babel.init_app(app)
+    
+    # Initialize Babel with the locale selector
+    babel.init_app(app, locale_selector=get_locale)
+    
     login_manager.init_app(app)
     mail.init_app(app)
 
@@ -34,16 +51,11 @@ def create_app(config_class=Config):
     @app.context_processor
     def inject_now():
         return {'now': datetime.utcnow()}
-
-    # Set up language selection
+    
+    # Set current language in g for templates
     @app.before_request
     def before_request():
-        # Check URL parameter for language first
-        lang = request.args.get('lang')
-        if lang in app.config['LANGUAGES']:
-            session['language'] = lang
-        # Fall back to session or default language
-        g.current_language = session.get('language', app.config['BABEL_DEFAULT_LOCALE'])
+        g.current_language = get_locale()
     
     # Import models after app is created to avoid circular imports
     with app.app_context():
