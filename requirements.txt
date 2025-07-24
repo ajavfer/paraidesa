@@ -1,0 +1,26 @@
+# Core
+Flask==2.3.3
+python-dotenv==1.0.0
+Werkzeug==2.3.7
+
+# Database
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+
+# Authentication
+Flask-Login==0.6.3
+
+# Forms
+Flask-WTF==1.2.1
+email-validator==2.1.0
+
+# Email
+Flask-Mail==0.9.1
+
+# Internationalization
+Flask-Babel==3.1.0
+Babel==2.13.0
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0

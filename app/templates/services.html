@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _('Our Services') }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<header class="page-header py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4">{{ _('Our Services') }}</h1>
+                <p class="lead">{{ _('Comprehensive landscape solutions for residential and commercial projects') }}</p>
+                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('main.index') }}">{{ _('Home') }}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ _('Services') }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title">{{ _('Comprehensive Landscape Solutions') }}</h2>
+                <p class="lead">
+                    {{ _('We offer a full range of landscape design and construction services to bring your outdoor vision to life.') }}
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            {% for service in [
+                {
+                    'icon': 'bi-tree',
+                    'title': _('Landscape Studies & Projects'),
+                    'description': _('Detailed analysis and planning for your landscape project, including site assessment, conceptual design, and master planning.')
+                },
+                {
+                    'icon': 'bi-brightness-high',
+                    'title': _('Landscaping & Engineering'),
+                    'description': _('Professional landscape construction and engineering services including grading, drainage, and structural elements.')
+                },
+                {
+                    'icon': 'bi-flower1',
+                    'title': _('Garden Design & Execution'),
+                    'description': _('Complete garden design services from concept to completion, tailored to your space and preferences.')
+                },
+                {
+                    'icon': 'bi-bug',
+                    'title': _('Botanical & Biological Studies'),
+                    'description': _('Expert analysis of plant life and ecosystems to ensure sustainable and appropriate plant selection.')
+                },
+                {
+                    'icon': 'bi-book',
+                    'title': _('Landscape & Botany Education'),
+                    'description': _('Educational programs and workshops on landscape design, plant care, and sustainable gardening practices.')
+                },
+                {
+                    'icon': 'bi-globe2',
+                    'title': _('Environmental Studies'),
+                    'description': _('Comprehensive environmental impact assessments and sustainable landscape solutions.')
+                }
+            ] %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm hover-shadow transition-all">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 70px; height: 70px;">
+                            <i class="{{ service.icon }} fs-3"></i>
+                        </div>
+                        <h3 class="h5 mb-3">{{ service.title }}</h3>
+                        <p class="text-muted mb-0">{{ service.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title">{{ _('Our Process') }}</h2>
+                <p class="lead">
+                    {{ _('A structured approach to bringing your landscape vision to life') }}
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            {% for step in [
+                {
+                    'number': '01',
+                    'title': _('Consultation'),
+                    'description': _('We begin with an in-depth consultation to understand your vision, needs, and budget.')
+                },
+                {
+                    'number': '02',
+                    'title': _('Site Analysis'),
+                    'description': _('Our team conducts a thorough analysis of your property, including soil, climate, and existing vegetation.')
+                },
+                {
+                    'number': '03',
+                    'title': _('Concept Design'),
+                    'description': _('We create initial design concepts that reflect your vision and our professional expertise.')
+                },
+                {
+                    'number': '04',
+                    'title': _('Design Development'),
+                    'description': _('The chosen concept is refined with detailed plans, material selections, and plant palettes.')
+                },
+                {
+                    'number': '05',
+                    'title': _('Implementation'),
+                    'description': _('Our skilled team brings the design to life with meticulous attention to detail and quality.')
+                },
+                {
+                    'number': '06',
+                    'title': _('Maintenance'),
+                    'description': _('We provide ongoing maintenance services to keep your landscape looking its best year-round.')
+                }
+            ] %}
+            <div class="col-md-6 col-lg-4">
+                <div class="d-flex">
+                    <div class="me-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                             style="width: 50px; height: 50px;">
+                            <span class="h5 mb-0">{{ step.number }}</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h5">{{ step.title }}</h3>
+                        <p class="text-muted mb-0">{{ step.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="h2">{{ _('Ready to start your project?') }}</h3>
+                <p class="lead mb-0">{{ _('Contact us today to schedule a consultation') }}</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                <a href="{{ url_for('main.contact') }}" class="btn btn-light btn-lg">
+                    {{ _('Get in Touch') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">{{ _('What Our Clients Say') }}</h2>
+            <p class="lead">{{ _('Hear from some of our satisfied customers') }}</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="row g-4">
+                    {% for testimonial in [
+                        {
+                            'text': _('Paraidesa transformed our backyard into a beautiful oasis. Their attention to detail and creative design exceeded our expectations.'),
+                            'name': 'María G.',
+                            'location': 'Madrid',
+                            'rating': 5
+                        },
+                        {
+                            'text': _('The team was professional, creative, and delivered our project on time and within budget. Highly recommended!'),
+                            'name': 'Carlos R.',
+                            'location': 'Barcelona',
+                            'rating': 5
+                        },
+                        {
+                            'text': _('Outstanding service from start to finish. Our garden has never looked better!'),
+                            'name': 'Elena M.',
+                            'location': 'Valencia',
+                            'rating': 5
+                        }
+                    ] %}
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="mb-3 text-warning">
+                                    {% for i in range(testimonial.rating) %}
+                                        <i class="bi bi-star-fill"></i>
+                                    {% endfor %}
+                                </div>
+                                <p class="mb-4">"{{ testimonial.text }}"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{ url_for('static', filename='images/avatar-' ~ loop.index ~ '.jpg') }}" 
+                                             class="rounded-circle me-3" 
+                                             width="50" 
+                                             alt="{{ testimonial.name }}">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">{{ testimonial.name }}</h5>
+                                        <small class="text-muted">{{ testimonial.location }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

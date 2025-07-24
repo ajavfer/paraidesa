@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Mensaje del Formulario de Contacto</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        .content { padding: 20px; background-color: #fff; border: 1px solid #dee2e6; }
+        .footer { margin-top: 20px; text-align: center; font-size: 12px; color: #6c757d; }
+        .field { margin-bottom: 15px; }
+        .field-label { font-weight: bold; color: #495057; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nuevo Mensaje del Formulario de Contacto</h1>
+        </div>
+        <div class="content">
+            <div class="field">
+                <div class="field-label">Nombre:</div>
+                <div>{{ name }}</div>
+            </div>
+            <div class="field">
+                <div class="field-label">Email:</div>
+                <div><a href="mailto:{{ email }}">{{ email }}</a></div>
+            </div>
+            <div class="field">
+                <div class="field-label">Teléfono:</div>
+                <div>{{ phone }}</div>
+            </div>
+            <div class="field">
+                <div class="field-label">Asunto:</div>
+                <div>{{ subject }}</div>
+            </div>
+            <div class="field">
+                <div class="field-label">Mensaje:</div>
+                <div style="white-space: pre-line;">{{ message }}</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Este correo fue enviado desde el formulario de contacto del sitio web de Paraidesa.</p>
+        </div>
+    </div>
+</body>
+</html>

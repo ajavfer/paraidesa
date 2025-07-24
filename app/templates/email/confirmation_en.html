@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You for Contacting Paraidesa</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .header img { max-width: 200px; height: auto; }
+        .content { background-color: #f9f9f9; padding: 25px; border-radius: 5px; }
+        .footer { margin-top: 20px; text-align: center; font-size: 12px; color: #6c757d; }
+        .button {
+            display: inline-block; 
+            padding: 10px 20px; 
+            background-color: #6b8e23; 
+            color: white !important; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Thank You for Contacting Paraidesa</h1>
+    </div>
+    
+    <div class="content">
+        <p>Dear {{ name }},</p>
+        
+        <p>Thank you for reaching out to Paraidesa. We have received your message and our team will get back to you as soon as possible.</p>
+        
+        <p><strong>Message Details:</strong></p>
+        <p><em>Subject:</em> {{ subject }}</p>
+        <p><em>Message:</em><br>
+        {{ message|nl2br }}</p>
+        
+        <p>We typically respond within 24-48 hours. If your inquiry is urgent, please don't hesitate to call us directly at +34 123 456 789.</p>
+        
+        <div style="text-align: center;">
+            <a href="https://paraidesa.com" class="button">Visit Our Website</a>
+        </div>
+        
+        <p>Best regards,<br>The Paraidesa Team</p>
+    </div>
+    
+    <div class="footer">
+        <p>© {{ now.year }} Paraidesa. All rights reserved.</p>
+        <p>
+            <a href="https://paraidesa.com/privacy">Privacy Policy</a> | 
+            <a href="https://paraidesa.com/terms">Terms of Service</a>
+        </p>
+        <p>Paraidesa, 123 Garden Street, Madrid, 28001, Spain</p>
+    </div>
+</body>
+</html>

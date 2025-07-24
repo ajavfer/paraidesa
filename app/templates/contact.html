@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+    .contact-info {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 2rem;
+        height: 100%;
+    }
+    .contact-info i {
+        font-size: 1.5rem;
+        color: #28a745;
+        margin-right: 1rem;
+    }
+    .form-control:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+    }
+    .btn-primary {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+    .btn-primary:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+    .contact-method {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    }
+    .contact-text {
+        flex: 1;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+            <h1 class="display-4 mb-3">{{ _('Contact Us') }}</h1>
+            <p class="lead">{{ _('Have questions or ready to start your project? We\'d love to hear from you!') }}</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="h4 mb-4">{{ _('Send us a Message') }}</h2>
+                    <form method="POST" action="{{ url_for('main.contact') }}" novalidate>
+                        {{ form.hidden_tag() }}
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    {{ form.name.label(class="form-label") }}
+                                    {{ form.name(class="form-control" + (' is-invalid' if form.name.errors else '')) }}
+                                    {% for error in form.name.errors %}
+                                        <div class="invalid-feedback">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    {{ form.email.label(class="form-label") }}
+                                    {{ form.email(class="form-control" + (' is-invalid' if form.email.errors else '')) }}
+                                    {% for error in form.email.errors %}
+                                        <div class="invalid-feedback">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-group">
+                                {{ form.phone.label(class="form-label") }}
+                                {{ form.phone(class="form-control" + (' is-invalid' if form.phone.errors else '')) }}
+                                {% for error in form.phone.errors %}
+                                    <div class="invalid-feedback">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-group">
+                                {{ form.subject.label(class="form-label") }}
+                                {{ form.subject(class="form-control" + (' is-invalid' if form.subject.errors else '')) }}
+                                {% for error in form.subject.errors %}
+                                    <div class="invalid-feedback">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="form-group">
+                                {{ form.message.label(class="form-label") }}
+                                {{ form.message(class="form-control" + (' is-invalid' if form.message.errors else ''), rows="5") }}
+                                {% for error in form.message.errors %}
+                                    <div class="invalid-feedback">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            {{ form.privacy_policy(class="form-check-input" + (' is-invalid' if form.privacy_policy.errors else '')) }}
+                            <label class="form-check-label" for="{{ form.privacy_policy.id }}">
+                                {{ _('I agree to the') }} <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">{{ _('privacy policy') }}</a>
+                            </label>
+                            {% for error in form.privacy_policy.errors %}
+                                <div class="invalid-feedback d-block">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        
+                        <div class="d-grid">
+                            {{ form.submit(class="btn btn-primary btn-lg") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="col-lg-4">
+            <div class="contact-info shadow-sm">
+                <h2 class="h4 mb-4">{{ _('Get in Touch') }}</h2>
+                
+                <div class="contact-method">
+                    <i class="bi bi-telephone"></i>
+                    <div class="contact-text">
+                        <h5 class="h6 mb-1">{{ _('Call Us') }}</h5>
+                        <p class="mb-0">+34 670 65 01 70</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="bi bi-envelope"></i>
+                    <div class="contact-text">
+                        <h5 class="h6 mb-1">{{ _('Email Us') }}</h5>
+                        <p class="mb-0">paraidesa@paraidesa.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="bi bi-clock"></i>
+                    <div class="contact-text">
+                        <h5 class="h6 mb-1">{{ _('Working Hours') }}</h5>
+                        <p class="mb-0">{{ _('Monday - Friday') }}<br>{{ _('9:00 AM - 6:00 PM') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ _('Privacy Policy') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>{{ _('Information We Collect') }}</h6>
+                <p>{{ _('We collect information that you provide directly to us, such as your name, email address, phone number, and any other information you choose to provide.') }}</p>
+                
+                <h6 class="mt-4">{{ _('How We Use Your Information') }}</h6>
+                <p>{{ _('We use the information we collect to respond to your inquiries, provide the services you request, and communicate with you about our services.') }}</p>
+                
+                <h6 class="mt-4">{{ _('Data Security') }}</h6>
+                <p>{{ _('We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.') }}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

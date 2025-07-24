@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _('Home') }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">{{ _('Paraidesa') }}</h1>
+        <p class="hero-subtitle">
+            {{ _('Diseñando paraísos, cultivando vida') }}<br>
+            <small>{{ _('Designing paradises, cultivating life') }}</small>
+        </p>
+        <div class="mt-4">
+            <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg me-3">
+                {{ _('Get a Quote') }}
+            </a>
+            <a href="{{ url_for('main.portfolio') }}" class="btn btn-outline-light btn-lg">
+                {{ _('View Our Work') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title">{{ _('Welcome to Paraidesa') }}</h2>
+                <p class="lead">
+                    {{ _('We are a landscape design studio dedicated to creating beautiful, sustainable outdoor spaces.') }}
+                </p>
+                <p>
+                    {{ _('Our team of experts combines creativity with technical knowledge to transform any space into a natural paradise. We work closely with our clients to understand their vision and bring it to life.') }}
+                </p>
+                <a href="{{ url_for('main.about') }}" class="btn btn-primary">
+                    {{ _('Learn More About Us') }}
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ url_for('static', filename='images/about-image.jpg') }}" 
+                     alt="{{ _('Beautiful garden design') }}" 
+                     class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">{{ _('Our Services') }}</h2>
+            <p class="lead">{{ _('Comprehensive landscape solutions for residential and commercial projects') }}</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/service-1.jpg') }}" 
+                         class="card-img-top" 
+                         alt="{{ _('Landscape Design') }}">
+                    <div class="card-body">
+                        <h3 class="h5">{{ _('Landscape Design') }}</h3>
+                        <p class="card-text">
+                            {{ _('Custom landscape designs tailored to your space, style, and needs.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/service-2.jpg') }}" 
+                         class="card-img-top" 
+                         alt="{{ _('Garden Construction') }}">
+                    <div class="card-body">
+                        <h3 class="h5">{{ _('Garden Construction') }}</h3>
+                        <p class="card-text">
+                            {{ _('Professional installation of hardscapes, softscapes, and outdoor living spaces.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/service-3.jpg') }}" 
+                         class="card-img-top" 
+                         alt="{{ _('Maintenance') }}">
+                    <div class="card-body">
+                        <h3 class="h5">{{ _('Maintenance') }}</h3>
+                        <p class="card-text">
+                            {{ _('Regular care and maintenance to keep your outdoor space looking its best year-round.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('main.services') }}" class="btn btn-outline-primary">
+                {{ _('View All Services') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Preview Section -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">{{ _('Our Work') }}</h2>
+            <p class="lead">{{ _('Explore some of our recent projects') }}</p>
+        </div>
+        
+        <div class="row g-4">
+            {% for i in range(3) %}
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='images/portfolio-' ~ (i+1) ~ '.jpg') }}" 
+                         alt="{{ _('Project') }} {{ i+1 }}" 
+                         class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="text-center text-white p-3">
+                            <h3 class="h5">{{ _('Project Title') }} {{ i+1 }}</h3>
+                            <p class="mb-0">{{ _('Residential Garden') }}</p>
+                            <a href="{{ url_for('main.portfolio') }}" class="btn btn-light btn-sm mt-2">
+                                {{ _('View Project') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('main.portfolio') }}" class="btn btn-primary">
+                {{ _('View Full Portfolio') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">{{ _('What Our Clients Say') }}</h2>
+            <p class="lead">{{ _('Hear from some of our satisfied customers') }}</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="text-center px-5">
+                                <div class="mb-4">
+                                    <i class="bi bi-quote display-1 text-muted"></i>
+                                </div>
+                                <p class="lead mb-4">
+                                    {{ _('Paraidesa transformed our backyard into a beautiful oasis. Their attention to detail and creative design exceeded our expectations.') }}
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <img src="{{ url_for('static', filename='images/avatar-1.jpg') }}" 
+                                         class="rounded-circle me-3" 
+                                         width="60" 
+                                         alt="Client">
+                                    <div class="text-start">
+                                        <h5 class="mb-0">María G.</h5>
+                                        <small class="text-muted">{{ _('Madrid') }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more testimonials as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="h2">{{ _('Ready to transform your outdoor space?') }}</h3>
+                <p class="lead mb-0">{{ _('Contact us today for a free consultation') }}</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                <a href="{{ url_for('main.contact') }}" class="btn btn-light btn-lg">
+                    {{ _('Get Started') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

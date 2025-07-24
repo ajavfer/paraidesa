@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="text-center mb-5">{{ _('About Paraidesa') }}</h1>
+            
+            <div class="mb-5">
+                <h2 class="h4 mb-3">{{ _('Our Story') }}</h2>
+                <p>{{ _('Paraidesa was born from a passion for creating beautiful, sustainable outdoor spaces that blend seamlessly with their natural surroundings. With years of experience in landscape design and gardening, we bring creativity and expertise to every project.') }}</p>
+            </div>
+            
+            <div class="mb-5">
+                <h2 class="h4 mb-3">{{ _('Our Mission') }}</h2>
+                <p>{{ _('Our mission is to transform ordinary spaces into extraordinary landscapes that enhance the beauty of your property and provide a sanctuary for both people and nature. We are committed to sustainable practices and creating designs that stand the test of time.') }}</p>
+            </div>
+            
+            <div class="mb-5">
+                <h2 class="h4 mb-3">{{ _('Our Team') }}</h2>
+                <p>{{ _('Our team of skilled professionals includes landscape architects, gardeners, and maintenance experts who share a common vision of excellence in landscape design and implementation.') }}</p>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg">
+                    {{ _('Get in Touch') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
