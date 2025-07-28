@@ -6,15 +6,11 @@
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
-        <h1 class="hero-title">{{ _('Paraidesa') }}</h1>
+        <h1 class="hero-title">Estudio de Paisajismo <span class="text-uppercase">PARAIDESA</span></h1>
         <p class="hero-subtitle">
-            {{ _('Diseñando paraísos, cultivando vida') }}<br>
-            <small>{{ _('Designing paradises, cultivating life') }}</small>
+            {{ _('Designing paradises, cultivating life') }}
         </p>
         <div class="mt-4">
-            <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg me-3">
-                {{ _('Get a Quote') }}
-            </a>
             <a href="{{ url_for('main.portfolio') }}" class="btn btn-outline-light btn-lg">
                 {{ _('View Our Work') }}
             </a>
@@ -27,20 +23,29 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="d-flex align-items-center mb-4">
-                    <h2 class="section-title mb-0">{{ _('Welcome to Paraidesa') }}</h2>
-                    <img src="{{ url_for('static', filename='images/home/welcome-garden.jpg') }}" 
-                         alt="{{ _('Beautiful Mediterranean garden') }}"
-                         class="ms-4 rounded-circle" 
-                         style="width: 80px; height: 80px; object-fit: cover; border: 3px solid var(--primary-color);">
-                </div>
+                <h2 class="section-title mb-4">{{ _('Welcome to Paraidesa') }}</h2>
                 <p class="lead">
                     {{ _('We are a landscape design studio dedicated to creating beautiful, sustainable outdoor spaces.') }}
                 </p>
                 <p>
                     {{ _('Our team of experts combines creativity with technical knowledge to transform any space into a natural paradise. We work closely with our clients to understand their vision and bring it to life.') }}
                 </p>
-                <a href="{{ url_for('main.about') }}" class="btn btn-primary">
+                <div class="team-member-card p-4 bg-white rounded shadow-sm mt-4">
+                    <div class="d-flex align-items-center">
+                        <img src="{{ url_for('static', filename='images/home/Paloma_Ferrer.png') }}" 
+                             alt="{{ _('Paloma Ferrer - Diseñadora Principal') }}" 
+                             class="rounded-circle me-4" 
+                             style="width: 100px; height: 100px; object-fit: cover; border: 3px solid var(--primary-color);">
+                        <div>
+                            <h4 class="h5 mb-1">Paloma Ferrer</h4>
+                            <p class="text-muted mb-2">{{ _('Diseñadora Principal & Fundadora') }}</p>
+                            <p class="small mb-0">
+                                {{ _('Con más de 25 años de experiencia en diseño de paisajes, Paloma aporta creatividad y experiencia a cada proyecto.') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('main.about') }}" class="btn btn-primary mt-4">
                     {{ _('Learn More About Us') }}
                 </a>
             </div>
@@ -117,34 +122,51 @@
 <section class="section bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title">{{ _('Our Work') }}</h2>
-            <p class="lead">{{ _('Explore some of our recent projects') }}</p>
+            <h2 class="section-title">Nuestro Trabajo</h2>
+            <p class="lead">Descubra algunos de nuestros proyectos recientes</p>
         </div>
         
-        <div class="row g-4">
-            {% for i in range(3) %}
-            <div class="col-md-4">
-                <div class="portfolio-item">
-                    <img src="{{ url_for('static', filename='images/portfolio-' ~ (i+1) ~ '.jpg') }}" 
-                         alt="{{ _('Project') }} {{ i+1 }}" 
-                         class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <div class="text-center text-white p-3">
-                            <h3 class="h5">{{ _('Project Title') }} {{ i+1 }}</h3>
-                            <p class="mb-0">{{ _('Residential Garden') }}</p>
-                            <a href="{{ url_for('main.portfolio') }}" class="btn btn-light btn-sm mt-2">
-                                {{ _('View Project') }}
-                            </a>
-                        </div>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="project-year text-success">2025-24 - En redacción</div>
+                        <h3 class="h5 mt-2">Plan Director del Parador Nacional de Lorca</h3>
+                        <p class="text-muted small">Lorca, Murcia</p>
+                        <p class="card-text">Colaboración con Ecoproyecta Arquitectura Sostenible SLP. Concedido por concurso, actualmente en fase de redacción.</p>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+            
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="project-year text-success">2023</div>
+                        <h3 class="h5 mt-2">Oasis de mariposas en el Castillo de Lorca</h3>
+                        <p class="text-muted small">Lorca, Murcia</p>
+                        <p class="card-text">Proyecto de siembra de plantas autóctonas y mejora del sistema de riego, financiado por la Unión Europea - NextGenerationEU.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="project-year text-success">2008-2010</div>
+                        <h3 class="h5 mt-2">Plan Director de los Nuevos Parques Integrados de Alcantarilla</h3>
+                        <p class="text-muted small">Alcantarilla, Murcia</p>
+                        <p class="card-text">1º Premio del Concurso de Ideas y Mención Especial en los Premios Mediterráneos del Paisaje.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div class="text-center mt-5">
+        <div class="text-center mt-4">
             <a href="{{ url_for('main.portfolio') }}" class="btn btn-primary">
-                {{ _('View Full Portfolio') }}
+                Ver todos los proyectos
             </a>
         </div>
     </div>

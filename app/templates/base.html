@@ -49,13 +49,17 @@
                 
                 <!-- Language Switcher -->
                 <div class="ms-3">
-                    <div class="btn-group" role="group">
-                        <a href="{{ url_for(request.endpoint, lang='es', **request.view_args) if request.endpoint and request.view_args else url_for('main.index', lang='es') }}"
-                           class="btn btn-sm btn-outline-light {{ 'active' if g.current_language == 'es' else '' }}">
+                    <div class="btn-group" role="group" style="box-shadow: 0 0 0 1px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+                        {% set lang_url = url_for(request.endpoint, lang_code='es', **request.view_args) if request.endpoint and request.view_args and 'lang_code' in request.view_args else url_for('main.index', lang_code='es') %}
+                        <a href="{{ lang_url }}"
+                           class="btn btn-sm {{ 'btn-primary' if g.current_language == 'es' else 'btn-light' }}"
+                           style="min-width: 40px; border: none; border-radius: 0; font-weight: 500;">
                             ES
                         </a>
-                        <a href="{{ url_for(request.endpoint, lang='en', **request.view_args) if request.endpoint and request.view_args else url_for('main.index', lang='en') }}"
-                           class="btn btn-sm btn-outline-light {{ 'active' if g.current_language == 'en' else '' }}">
+                        {% set lang_url = url_for(request.endpoint, lang_code='en', **request.view_args) if request.endpoint and request.view_args and 'lang_code' in request.view_args else url_for('main.index', lang_code='en') %}
+                        <a href="{{ lang_url }}"
+                           class="btn btn-sm {{ 'btn-primary' if g.current_language == 'en' else 'btn-light' }}"
+                           style="min-width: 40px; border: none; border-radius: 0; font-weight: 500;">
                             EN
                         </a>
                     </div>
@@ -83,8 +87,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">{{ _('Paraidesa') }}</h5>
-                    <p>{{ _('Designing paradises, cultivating life.') }}<br>
-                    {{ _('Diseñando paraísos, cultivando vida.') }}</p>
+                    <p>{{ _('Designing paradises, cultivating life.') }}</p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">{{ _('Links') }}</h5>
@@ -98,14 +101,14 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">{{ _('Contact') }}</h5>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-telephone"></i> +34 670 65 01 70</li>
-                        <li><i class="bi bi-envelope"></i> paraidesa@paraidesa.com</li>
+                        <li><i class="bi bi-telephone"></i> {{ _('Phone:') }} +34 670 65 01 70</li>
+                        <li><i class="bi bi-envelope"></i> {{ _('Email:') }} paraidesa@paraidesa.com</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            {{ now.year }} Paraidesa. {{ _('All rights reserved.') }}
+            &copy; {{ now.year }} {{ _('Paraidesa. All rights reserved.') }}
         </div>
     </footer>
 

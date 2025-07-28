@@ -97,6 +97,10 @@ msgstr "El mensaje debe tener entre 10 y 2000 caracteres"
 msgid "Your message here..."
 msgstr "Tu mensaje aquí..."
 
+#: app/main/forms.py:57
+msgid "Send Message"
+msgstr "Enviar Mensaje"
+
 #: app/main/routes.py:12 app/templates/base.html:34 app/templates/index.html:3
 #: app/templates/services.html:15
 msgid "Home"
@@ -113,15 +117,15 @@ msgstr "Servicios"
 
 #: app/main/routes.py:27 app/templates/base.html:43 app/templates/base.html:94
 msgid "Portfolio"
-msgstr "Portafolio"
+msgstr "Trabajos"
 
 #: app/main/routes.py:63
 msgid "Thank you for your message. We will get back to you soon!"
-msgstr ""
+msgstr "Gracias por su mensaje. ¡Nos pondremos en contacto con usted pronto!"
 
 #: app/main/routes.py:68
 msgid "An error occurred while sending your message. Please try again later."
-msgstr ""
+msgstr "Ocurrió un error al enviar su mensaje. Por favor, inténtelo de nuevo más tarde."
 
 #: app/main/routes.py:71 app/templates/contact.html:43
 msgid "Contact Us"
@@ -129,11 +133,11 @@ msgstr "Contacto"
 
 #: app/templates/about.html:7
 msgid "About Paraidesa"
-msgstr ""
+msgstr "Sobre Paraidesa"
 
 #: app/templates/about.html:10
 msgid "Our Story"
-msgstr ""
+msgstr "Nuestra Historia"
 
 #: app/templates/about.html:11
 msgid ""
@@ -141,11 +145,11 @@ msgid ""
 "outdoor spaces that blend seamlessly with their natural surroundings. "
 "With years of experience in landscape design and gardening, we bring "
 "creativity and expertise to every project."
-msgstr ""
+msgstr "Paraidesa nació de la pasión por crear espacios exteriores hermosos y sostenibles que se integren perfectamente con su entorno natural. Con años de experiencia en diseño de paisajes y jardinería, aportamos creatividad y experiencia a cada proyecto."
 
 #: app/templates/about.html:15
 msgid "Our Mission"
-msgstr ""
+msgstr "Nuestra Misión"
 
 #: app/templates/about.html:16
 msgid ""
@@ -153,28 +157,28 @@ msgid ""
 " that enhance the beauty of your property and provide a sanctuary for "
 "both people and nature. We are committed to sustainable practices and "
 "creating designs that stand the test of time."
-msgstr ""
+msgstr "Nuestra misión es transformar espacios ordinarios en paisajes extraordinarios que mejoren la belleza de su propiedad y proporcionen un santuario tanto para las personas como para la naturaleza. Estamos comprometidos con prácticas sostenibles y la creación de diseños que resistan el paso del tiempo."
 
 #: app/templates/about.html:20
 msgid "Our Team"
-msgstr ""
+msgstr "Nuestro Equipo"
 
 #: app/templates/about.html:21
 msgid ""
 "Our team of skilled professionals includes landscape architects, "
 "gardeners, and maintenance experts who share a common vision of "
 "excellence in landscape design and implementation."
-msgstr ""
+msgstr "Nuestro equipo de profesionales cualificados incluye arquitectos paisajistas, jardineros y expertos en mantenimiento que comparten una visión común de excelencia en diseño e implementación de paisajes."
 
 #: app/templates/about.html:26 app/templates/contact.html:129
 #: app/templates/services.html:160
 msgid "Get in Touch"
-msgstr ""
+msgstr "Contáctenos"
 
 #: app/templates/base.html:6 app/templates/base.html:26
 #: app/templates/base.html:85 app/templates/index.html:9
 msgid "Paraidesa"
-msgstr ""
+msgstr "Paraidesa"
 
 #: app/templates/base.html:37
 msgid "About"
@@ -187,106 +191,107 @@ msgstr "Contacto"
 
 #: app/templates/base.html:86
 msgid "Designing paradises, cultivating life."
-msgstr ""
+msgstr "Diseñando paraísos, cultivando vida."
 
 #: app/templates/base.html:87
 msgid "Diseñando paraísos, cultivando vida."
-msgstr ""
+msgstr "Diseñando paraísos, cultivando vida."
 
 #: app/templates/base.html:90
 msgid "Links"
 msgstr "Enlaces"
 
 #: app/templates/base.html:108
-msgid "All rights reserved."
-msgstr "Todos los derechos reservados."
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#: app/templates/base.html:108
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#: app/templates/base.html:108
+msgid "Paraidesa. All rights reserved."
+msgstr "Paraidesa. Todos los derechos reservados."
 
 #: app/templates/contact.html:44
 msgid "Have questions or ready to start your project? We'd love to hear from you!"
-msgstr ""
+msgstr "¿Tiene preguntas o está listo para comenzar su proyecto? ¡Nos encantaría saber de usted!"
 
 #: app/templates/contact.html:53
 msgid "Send us a Message"
-msgstr ""
+msgstr "Envíanos un Mensaje"
 
-#: app/templates/contact.html:111
+#: app/templates/contact.html:112
 msgid "I agree to the"
-msgstr ""
+msgstr "Acepto la"
 
-#: app/templates/contact.html:111
+#: app/templates/contact.html:112
 msgid "privacy policy"
-msgstr ""
+msgstr "política de privacidad"
 
-#: app/templates/contact.html:134
+#: app/templates/contact.html:130
+msgid "Get in Touch"
+msgstr "Contáctenos"
+
+#: app/templates/contact.html:135
 msgid "Call Us"
-msgstr ""
+msgstr "Llámenos"
 
-#: app/templates/contact.html:142
+#: app/templates/contact.html:144
 msgid "Email Us"
-msgstr ""
+msgstr "Escríbanos"
 
-#: app/templates/contact.html:150
+#: app/templates/contact.html:152
 msgid "Working Hours"
-msgstr ""
+msgstr "Horario de Atención"
 
-#: app/templates/contact.html:151
+#: app/templates/contact.html:153
 msgid "Monday - Friday"
-msgstr ""
+msgstr "Lunes a Viernes"
 
-#: app/templates/contact.html:151
+#: app/templates/contact.html:153
 msgid "9:00 AM - 6:00 PM"
-msgstr ""
+msgstr "9:00 AM - 6:00 PM"
 
-#: app/templates/contact.html:164
+#: app/templates/contact.html:173
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de Privacidad"
 
-#: app/templates/contact.html:168
+#: app/templates/contact.html:177
 msgid "Information We Collect"
-msgstr ""
+msgstr "Información que Recopilamos"
 
-#: app/templates/contact.html:169
-msgid ""
-"We collect information that you provide directly to us, such as your "
-"name, email address, phone number, and any other information you choose "
-"to provide."
-msgstr ""
+#: app/templates/contact.html:178
+msgid "We collect information that you provide directly to us, such as your name, email address, phone number, and any other information you choose to provide."
+msgstr "Recopilamos la información que nos proporciona directamente, como su nombre, dirección de correo electrónico, número de teléfono y cualquier otra información que elija proporcionar."
 
-#: app/templates/contact.html:171
+#: app/templates/contact.html:181
 msgid "How We Use Your Information"
-msgstr ""
+msgstr "Cómo Utilizamos su Información"
 
-#: app/templates/contact.html:172
-msgid ""
-"We use the information we collect to respond to your inquiries, provide "
-"the services you request, and communicate with you about our services."
-msgstr ""
+#: app/templates/contact.html:182
+msgid "We use the information we collect to respond to your inquiries, provide the services you request, and communicate with you about our services."
+msgstr "Utilizamos la información que recopilamos para responder a sus consultas, proporcionar los servicios que solicita y comunicarnos con usted sobre nuestros servicios."
 
-#: app/templates/contact.html:174
+#: app/templates/contact.html:185
 msgid "Data Security"
-msgstr ""
+msgstr "Seguridad de los Datos"
 
-#: app/templates/contact.html:175
-msgid ""
-"We implement appropriate technical and organizational measures to protect"
-" your personal information against unauthorized access, alteration, "
-"disclosure, or destruction."
-msgstr ""
+#: app/templates/contact.html:186
+msgid "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+msgstr "Implementamos medidas técnicas y organizativas adecuadas para proteger su información personal contra el acceso no autorizado, alteración, divulgación o destrucción."
 
-#: app/templates/contact.html:178 app/templates/portfolio.html:190
-#: app/templates/portfolio.html:222 app/templates/portfolio.html:254
-#: app/templates/portfolio.html:286 app/templates/portfolio.html:318
-#: app/templates/portfolio.html:350
+#: app/templates/contact.html:189
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: app/templates/index.html:11
 msgid "Diseñando paraísos, cultivando vida"
-msgstr ""
+msgstr "Diseñando paraísos, cultivando vida"
 
 #: app/templates/index.html:12
 msgid "Designing paradises, cultivating life"
-msgstr ""
+msgstr "Diseñando paraísos, cultivando vida"
 
 #: app/templates/index.html:16
 msgid "Get a Quote"
@@ -302,7 +307,7 @@ msgstr "Bienvenido a Paraidesa"
 
 #: app/templates/index.html:33
 msgid "Beautiful Mediterranean garden"
-msgstr ""
+msgstr "Hermoso jardín mediterráneo"
 
 #: app/templates/index.html:38
 msgid ""
@@ -323,7 +328,7 @@ msgstr "Conócenos Mejor"
 
 #: app/templates/index.html:49
 msgid "Beautiful garden design"
-msgstr ""
+msgstr "Hermoso diseño de jardín"
 
 #: app/templates/index.html:60 app/templates/services.html:3
 #: app/templates/services.html:11
@@ -414,7 +419,7 @@ msgstr "Paraidesa transformó nuestro jardín trasero en un hermoso oasis. Su at
 
 #: app/templates/index.html:180
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #: app/templates/index.html:198
 msgid "Ready to transform your outdoor space?"
@@ -426,355 +431,355 @@ msgstr "Contáctenos hoy para una consulta gratuita"
 
 #: app/templates/index.html:203
 msgid "Get Started"
-msgstr ""
+msgstr "Comenzar"
 
 #: app/templates/portfolio.html:46
 msgid "Our Portfolio"
-msgstr ""
+msgstr "Nuestro Portafolio"
 
 #: app/templates/portfolio.html:47
 msgid ""
 "Explore our recent landscaping projects and get inspired for your own "
 "outdoor space."
-msgstr ""
+msgstr "Explore nuestros proyectos recientes de paisajismo e inspírese para su propio espacio exterior."
 
 #: app/templates/portfolio.html:54
 msgid "All"
-msgstr ""
+msgstr "Todo"
 
 #: app/templates/portfolio.html:55
 msgid "Garden Design"
-msgstr ""
+msgstr "Diseño de Jardines"
 
 #: app/templates/portfolio.html:56
 msgid "Terraces"
-msgstr ""
+msgstr "Terrazas"
 
 #: app/templates/portfolio.html:57
 msgid "Pools"
-msgstr ""
+msgstr "Piscinas"
 
 #: app/templates/portfolio.html:58
 msgid "Lighting"
-msgstr ""
+msgstr "Iluminación"
 
 #: app/templates/portfolio.html:76
 msgid "Castillo de Lorca"
-msgstr ""
+msgstr "Castillo de Lorca"
 
 #: app/templates/portfolio.html:77
 msgid "Historic Garden Restoration"
-msgstr ""
+msgstr "Restauración de Jardín Histórico"
 
 #: app/templates/portfolio.html:92 app/templates/portfolio.html:201
 msgid "Modern Residence Garden"
-msgstr ""
+msgstr "Jardín de Residencia Moderna"
 
 #: app/templates/portfolio.html:93
 msgid "Contemporary Design"
-msgstr ""
+msgstr "Diseño Contemporáneo"
 
 #: app/templates/portfolio.html:108 app/templates/portfolio.html:233
 msgid "Luxury Rooftop Terrace"
-msgstr ""
+msgstr "Terraza en Azotea de Lujo"
 
 #: app/templates/portfolio.html:109
 msgid "Outdoor Living Space"
-msgstr ""
+msgstr "Espacio de Vida al Aire Libre"
 
 #: app/templates/portfolio.html:124 app/templates/portfolio.html:265
 msgid "Infinity Pool Oasis"
-msgstr ""
+msgstr "Oasis con Piscina Infinita"
 
 #: app/templates/portfolio.html:125
 msgid "Luxury Pool Design"
-msgstr ""
+msgstr "Diseño de Piscina de Lujo"
 
 #: app/templates/portfolio.html:140 app/templates/portfolio.html:297
 msgid "Minimalist Garden"
-msgstr ""
+msgstr "Jardín Minimalista"
 
 #: app/templates/portfolio.html:141
 msgid "Contemporary Landscape"
-msgstr ""
+msgstr "Paisaje Contemporáneo"
 
 #: app/templates/portfolio.html:156 app/templates/portfolio.html:329
 msgid "Elegant Garden Retreat"
-msgstr ""
+msgstr "Refugio de Jardín Elegante"
 
 #: app/templates/portfolio.html:157
 msgid "Landscape Architecture"
-msgstr ""
+msgstr "Arquitectura del Paisaje"
 
 #: app/templates/portfolio.html:169
 msgid "Castillo de Lorca Gardens"
-msgstr ""
+msgstr "Jardines del Castillo de Lorca"
 
 #: app/templates/portfolio.html:178 app/templates/portfolio.html:210
 #: app/templates/portfolio.html:242 app/templates/portfolio.html:274
 #: app/templates/portfolio.html:306 app/templates/portfolio.html:338
 msgid "Project Details"
-msgstr ""
+msgstr "Detalles del Proyecto"
 
 #: app/templates/portfolio.html:179
 msgid ""
 "Historic garden restoration at the iconic Castillo de Lorca, blending "
 "traditional Mediterranean landscaping with modern sustainability "
 "practices."
-msgstr ""
+msgstr "Restauración de jardín histórico en el icónico Castillo de Lorca, combinando paisajismo mediterráneo tradicional con prácticas de sostenibilidad modernas."
 
 #: app/templates/portfolio.html:181 app/templates/portfolio.html:213
 #: app/templates/portfolio.html:245 app/templates/portfolio.html:277
 #: app/templates/portfolio.html:309 app/templates/portfolio.html:341
 msgid "Location:"
-msgstr ""
+msgstr "Ubicación:"
 
 #: app/templates/portfolio.html:181
 msgid "Lorca, Spain"
-msgstr ""
+msgstr "Lorca, España"
 
 #: app/templates/portfolio.html:182 app/templates/portfolio.html:214
 #: app/templates/portfolio.html:246 app/templates/portfolio.html:278
 #: app/templates/portfolio.html:310 app/templates/portfolio.html:342
 msgid "Size:"
-msgstr ""
+msgstr "Tamaño:"
 
 #: app/templates/portfolio.html:183 app/templates/portfolio.html:215
 #: app/templates/portfolio.html:247 app/templates/portfolio.html:279
 #: app/templates/portfolio.html:311 app/templates/portfolio.html:343
 msgid "Completed:"
-msgstr ""
+msgstr "Completado:"
 
 #: app/templates/portfolio.html:184 app/templates/portfolio.html:216
 #: app/templates/portfolio.html:248 app/templates/portfolio.html:280
 #: app/templates/portfolio.html:312 app/templates/portfolio.html:344
 msgid "Features:"
-msgstr ""
+msgstr "Características:"
 
 #: app/templates/portfolio.html:184
 msgid "Drought-resistant plants, traditional stonework, historical accuracy"
-msgstr ""
+msgstr "Plantas resistentes a la sequía, trabajo en piedra tradicional, precisión histórica"
 
 #: app/templates/portfolio.html:211
 msgid ""
 "A contemporary garden design that complements modern architecture with "
 "clean lines and minimalist plantings."
-msgstr ""
+msgstr "Un diseño de jardín contemporáneo que complementa la arquitectura moderna con líneas limpias y plantaciones minimalistas."
 
 #: app/templates/portfolio.html:213
 msgid "Barcelona, Spain"
-msgstr ""
+msgstr "Barcelona, España"
 
 #: app/templates/portfolio.html:216
 msgid "Native plants, sustainable irrigation, outdoor lighting"
-msgstr ""
+msgstr "Plantas nativas, riego sostenible, iluminación exterior"
 
 #: app/templates/portfolio.html:243
 msgid ""
 "An elegant rooftop terrace designed for both relaxation and "
 "entertainment, featuring premium materials and panoramic views."
-msgstr ""
+msgstr "Una elegante terraza en azotea diseñada para la relajación y el entretenimiento, con materiales de alta calidad y vistas panorámicas."
 
 #: app/templates/portfolio.html:245
 msgid "Madrid, Spain"
-msgstr ""
+msgstr "Madrid, España"
 
 #: app/templates/portfolio.html:248
 msgid "Outdoor kitchen, lounge area, weather-resistant furniture"
-msgstr ""
+msgstr "Cocina exterior, área de estar, muebles resistentes a la intemperie"
 
 #: app/templates/portfolio.html:275
 msgid ""
 "A stunning infinity pool that blends seamlessly with the surrounding "
 "landscape, creating a luxurious retreat."
-msgstr ""
+msgstr "Una impresionante piscina infinita que se integra perfectamente con el paisaje circundante, creando un refugio de lujo."
 
 #: app/templates/portfolio.html:277
 msgid "Marbella, Spain"
-msgstr ""
+msgstr "Marbella, España"
 
 #: app/templates/portfolio.html:280
 msgid "Infinity edge, LED lighting, natural stone deck"
-msgstr ""
+msgstr "Borde infinito, iluminación LED, cubierta de piedra natural"
 
 #: app/templates/portfolio.html:307
 msgid ""
 "A clean, minimalist garden design that creates a peaceful outdoor "
 "sanctuary with low-maintenance plantings."
-msgstr ""
+msgstr "Un diseño de jardín limpio y minimalista que crea un santuario exterior pacífico con plantaciones de bajo mantenimiento."
 
 #: app/templates/portfolio.html:309
 msgid "Valencia, Spain"
-msgstr ""
+msgstr "Valencia, España"
 
 #: app/templates/portfolio.html:312
 msgid "Drought-tolerant plants, geometric hardscaping, subtle lighting"
-msgstr ""
+msgstr "Plantas tolerantes a la sequía, elementos duros geométricos, iluminación sutil"
 
 #: app/templates/portfolio.html:339
 msgid ""
 "A beautifully designed garden that combines formal elements with "
 "naturalistic plantings for a timeless appeal."
-msgstr ""
+msgstr "Un jardín hermosamente diseñado que combina elementos formales con plantaciones naturalistas para un atractivo intemporal."
 
 #: app/templates/portfolio.html:341
 msgid "Seville, Spain"
-msgstr ""
+msgstr "Sevilla, España"
 
 #: app/templates/portfolio.html:344
 msgid "Formal hedges, water feature, mixed borders"
-msgstr ""
+msgstr "Setos formales, elemento acuático, bordes mixtos"
 
 #: app/templates/services.html:29
 msgid "Comprehensive Landscape Solutions"
-msgstr ""
+msgstr "Soluciones Integrales de Paisajismo"
 
 #: app/templates/services.html:31
 msgid ""
 "We offer a full range of landscape design and construction services to "
 "bring your outdoor vision to life."
-msgstr ""
+msgstr "Ofrecemos una amplia gama de servicios de diseño y construcción de paisajes para hacer realidad su visión exterior."
 
 #: app/templates/services.html:40
 msgid "Landscape Studies & Projects"
-msgstr ""
+msgstr "Estudios y Proyectos de Paisajismo"
 
 #: app/templates/services.html:41
 msgid ""
 "Detailed analysis and planning for your landscape project, including site"
 " assessment, conceptual design, and master planning."
-msgstr ""
+msgstr "Análisis y planificación detallados para su proyecto de paisajismo, incluyendo evaluación del sitio, diseño conceptual y planificación maestra."
 
 #: app/templates/services.html:45
 msgid "Landscaping & Engineering"
-msgstr ""
+msgstr "Paisajismo e Ingeniería"
 
 #: app/templates/services.html:46
 msgid ""
 "Professional landscape construction and engineering services including "
 "grading, drainage, and structural elements."
-msgstr ""
+msgstr "Servicios profesionales de construcción y ingeniería de paisajes, incluyendo gradación, drenaje y elementos estructurales."
 
 #: app/templates/services.html:50
 msgid "Garden Design & Execution"
-msgstr ""
+msgstr "Diseño y Ejecución de Jardines"
 
 #: app/templates/services.html:51
 msgid ""
 "Complete garden design services from concept to completion, tailored to "
 "your space and preferences."
-msgstr ""
+msgstr "Servicios de diseño de jardines completos desde el concepto hasta la finalización, adaptados a su espacio y preferencias."
 
 #: app/templates/services.html:55
 msgid "Botanical & Biological Studies"
-msgstr ""
+msgstr "Estudios Botánicos y Biológicos"
 
 #: app/templates/services.html:56
 msgid ""
 "Expert analysis of plant life and ecosystems to ensure sustainable and "
 "appropriate plant selection."
-msgstr ""
+msgstr "Análisis experto de la vida de las plantas y los ecosistemas para garantizar una selección de plantas sostenible y adecuada."
 
 #: app/templates/services.html:60
 msgid "Landscape & Botany Education"
-msgstr ""
+msgstr "Educación en Paisajismo y Botánica"
 
 #: app/templates/services.html:61
 msgid ""
 "Educational programs and workshops on landscape design, plant care, and "
 "sustainable gardening practices."
-msgstr ""
+msgstr "Programas educativos y talleres sobre diseño de paisajes, cuidado de plantas y prácticas de jardinería sostenible."
 
 #: app/templates/services.html:65
 msgid "Environmental Studies"
-msgstr ""
+msgstr "Estudios Ambientales"
 
 #: app/templates/services.html:66
 msgid ""
 "Comprehensive environmental impact assessments and sustainable landscape "
 "solutions."
-msgstr ""
+msgstr "Evaluaciones integrales del impacto ambiental y soluciones de paisajismo sostenible."
 
 #: app/templates/services.html:91
 msgid "Our Process"
-msgstr ""
+msgstr "Nuestro Proceso"
 
 #: app/templates/services.html:93
 msgid "A structured approach to bringing your landscape vision to life"
-msgstr ""
+msgstr "Un enfoque estructurado para hacer realidad su visión de paisajismo"
 
 #: app/templates/services.html:102
 msgid "Consultation"
-msgstr ""
+msgstr "Consulta"
 
 #: app/templates/services.html:103
 msgid ""
 "We begin with an in-depth consultation to understand your vision, needs, "
 "and budget."
-msgstr ""
+msgstr "Comenzamos con una consulta en profundidad para comprender su visión, necesidades y presupuesto."
 
 #: app/templates/services.html:107
 msgid "Site Analysis"
-msgstr ""
+msgstr "Análisis del Sitio"
 
 #: app/templates/services.html:108
 msgid ""
 "Our team conducts a thorough analysis of your property, including soil, "
 "climate, and existing vegetation."
-msgstr ""
+msgstr "Nuestro equipo realiza un análisis exhaustivo de su propiedad, incluyendo suelo, clima y vegetación existente."
 
 #: app/templates/services.html:112
 msgid "Concept Design"
-msgstr ""
+msgstr "Diseño de Concepto"
 
 #: app/templates/services.html:113
 msgid ""
 "We create initial design concepts that reflect your vision and our "
 "professional expertise."
-msgstr ""
+msgstr "Creamos conceptos de diseño iniciales que reflejan su visión y nuestra experiencia profesional."
 
 #: app/templates/services.html:117
 msgid "Design Development"
-msgstr ""
+msgstr "Desarrollo del Diseño"
 
 #: app/templates/services.html:118
 msgid ""
 "The chosen concept is refined with detailed plans, material selections, "
 "and plant palettes."
-msgstr ""
+msgstr "El concepto elegido se refina con planes detallados, selección de materiales y paletas de plantas."
 
 #: app/templates/services.html:122
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: app/templates/services.html:123
 msgid ""
 "Our skilled team brings the design to life with meticulous attention to "
 "detail and quality."
-msgstr ""
+msgstr "Nuestro equipo experto hace realidad el diseño con una atención meticulosa al detalle y la calidad."
 
 #: app/templates/services.html:128
 msgid ""
 "We provide ongoing maintenance services to keep your landscape looking "
 "its best year-round."
-msgstr ""
+msgstr "Ofrecemos servicios de mantenimiento continuo para mantener su paisaje en óptimas condiciones durante todo el año."
 
 #: app/templates/services.html:155
 msgid "Ready to start your project?"
-msgstr ""
+msgstr "¿Listo para comenzar su proyecto?"
 
 #: app/templates/services.html:156
 msgid "Contact us today to schedule a consultation"
-msgstr ""
+msgstr "Contáctenos hoy para programar una consulta"
 
 #: app/templates/services.html:186
 msgid ""
 "The team was professional, creative, and delivered our project on time "
 "and within budget. Highly recommended!"
-msgstr ""
+msgstr "El equipo fue profesional, creativo y entregó nuestro proyecto a tiempo y dentro del presupuesto. ¡Muy recomendado!"
 
 #: app/templates/services.html:192
 msgid ""
 "Outstanding service from start to finish. Our garden has never looked "
 "better!"
-msgstr ""
+msgstr "Servicio excepcional desde el principio hasta el final. ¡Nuestro jardín nunca ha lucido mejor!"

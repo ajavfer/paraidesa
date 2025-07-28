@@ -16,7 +16,14 @@ mail = Mail()
 login_manager.login_view = 'main.login'
 
 def get_locale():
-    # Check URL parameter first
+    # First check if language is in the URL path (e.g., /es/contact)
+    if request.view_args and 'lang_code' in request.view_args:
+        lang = request.view_args['lang_code']
+        if lang in current_app.config['LANGUAGES']:
+            session['language'] = lang
+            return lang
+    
+    # Then check URL parameter (e.g., ?lang=es)
     lang = request.args.get('lang')
     if lang in current_app.config['LANGUAGES']:
         session['language'] = lang
